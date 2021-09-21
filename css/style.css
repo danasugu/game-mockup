@@ -36,19 +36,20 @@
 .sidebar {
   grid-row: 3 / span 4;
   grid-column: 4 / 5;
+  background-color: #ced3dc;
 }
 
 .footer {
   grid-column: 1 / span 3;
 }
 .btn {
-  background-color: #60a561;
+  background-color: #ee6352;
   padding: 10px;
   margin: 5px auto;
   text-align: center;
 }
 .btn:hover {
-  background-color: #006045;
+  background-color: #ee412a;
   cursor: pointer;
   color: #fff;
 }
@@ -56,6 +57,7 @@
 select {
   margin: 10px;
   text-align: center;
+  background-color: #ee6352;
 }
 .master {
   padding: 10px;
