@@ -4,7 +4,7 @@
 
   display: grid;
   grid-gap: 10px;
-  grid-template-rows: 100px 100px 200px 200px 100px;
+  grid-template-rows: 100px 200px 200px 200px 100px;
   grid-template-columns: repeat(3, 1fr) 200px;
 }
 .container * {
@@ -26,11 +26,11 @@
 }
 
 .categories {
-  background-color: #ac108a;
+  background-color: #655a7c;
 }
 
 .masa {
-  background-color: #4fcc13;
+  background-color: #053225;
 }
 
 .sidebar {
@@ -42,7 +42,7 @@
   grid-column: 1 / -1;
 }
 .btn {
-  background-color: #0e9b74;
+  background-color: #60a561;
   padding: 10px;
   margin: 5px auto;
   text-align: center;
