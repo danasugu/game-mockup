@@ -25,6 +25,14 @@
   grid-row: 3 / span 2;
 }
 
+.categories {
+  background-color: #ec6315;
+}
+
+.masa {
+  background-color: #4fcc13;
+}
+
 .sidebar {
   grid-row: 3 / span 2;
   grid-column: 4 / 5;
