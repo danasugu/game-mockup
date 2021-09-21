@@ -26,7 +26,8 @@
 }
 
 .categories {
-  background-color: #655a7c;
+  background-color: #b2ffa9;
+  color: #000;
 }
 
 .masa {
@@ -36,7 +37,7 @@
 .sidebar {
   grid-row: 3 / span 4;
   grid-column: 4 / 5;
-  background-color: #ced3dc;
+  background-color: #e4d6a7;
 }
 
 .footer {
