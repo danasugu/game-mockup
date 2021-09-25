@@ -76,3 +76,7 @@ select {
   left: 5px;
   cursor: pointer;
 }
+
+.empty {
+  display: inline-block;
+}
