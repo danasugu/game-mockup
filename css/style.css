@@ -18,11 +18,13 @@
   grid-column: 1 / -1;
 }
 .sb-1 {
-  grid-row: 3 / span 2;
+  grid-row: 3 / -2;
 }
-
+.sb-2 {
+  grid-row: 3 / -2;
+}
 .sb-4 {
-  grid-row: 3 / span 2;
+  grid-row: 4;
 }
 
 .categories {
