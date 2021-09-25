@@ -66,3 +66,13 @@ select {
   padding: 10px;
   margin: 5px;
 }
+
+.fill {
+  background-image: url('https://source.unsplash.com/random/150');
+  position: relative;
+  height: 200px;
+  width: 200px;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+}
