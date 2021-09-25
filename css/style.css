@@ -68,10 +68,10 @@ select {
 }
 
 .fill {
-  background-image: url('https://source.unsplash.com/random/150');
+  background-image: url('https://source.unsplash.com/random/200x200');
   position: relative;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   top: 5px;
   left: 5px;
   cursor: pointer;
@@ -79,4 +79,5 @@ select {
 
 .empty {
   display: inline-block;
+  /* height: 160px; */
 }
