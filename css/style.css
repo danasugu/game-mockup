@@ -81,3 +81,13 @@ select {
   display: inline-block;
   /* height: 160px; */
 }
+
+.hold{
+  border: solid #ccc 4px;
+}
+
+.hovered{
+  background: #f4f4f4;
+  border-style:dashed;
+}
+
