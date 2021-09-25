@@ -82,12 +82,15 @@ select {
   /* height: 160px; */
 }
 
-.hold{
+.hold {
   border: solid #ccc 4px;
 }
 
-.hovered{
+.hovered {
   background: #f4f4f4;
-  border-style:dashed;
+  border-style: dashed;
 }
 
+.invisible {
+  display: none;
+}
