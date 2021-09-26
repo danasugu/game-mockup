@@ -68,7 +68,7 @@ select {
 }
 
 .fill {
-  background-image: url('https://source.unsplash.com/random/200x200');
+  background-image: url('https://source.unsplash.com/user/erondu/');
   position: relative;
   height: 150px;
   width: 150px;
@@ -92,5 +92,5 @@ select {
 }
 
 .invisible {
-  display: none;
+  /* display: none; */
 }
