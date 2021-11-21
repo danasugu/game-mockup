@@ -245,9 +245,9 @@ source.onmessage = function (event) {
 };
 
 source.onerror = function (event) {
-  alert(
-    'Error connecting to the server, please use Synchronize when connection is restored'
-  );
+  // alert(
+  //   'Error connecting to the server, please use Synchronize when connection is restored'
+  // );
 };
 
 function getBaseURL() {
@@ -407,18 +407,17 @@ function getCardObjFromClass(cardClass) {
 }
 
 function handleClick(evt) {
-  alert('Click not handled yet for master');
+  // alert('Click not handled yet for master');
 }
 
 function handlePileClick(pile) {
-  alert('click not handled yet');
+  // alert('click not handled yet');
   /*
     if (!clickedCard && isPlayerTurn() && ! hasDrawn) {
         hasDrawn = drawCard(pile);
         checkMove();
     }
     */
-
   //TODO: if the pile is empty: show empty card?
   // renderEmpty(pile);
 }
