@@ -1,0 +1,1716 @@
+@charset "UTF-8";
+.card {
+  box-sizing: border-box;
+  margin: 5px 5px 5px 5px;
+  cursor: pointer;
+  /* Set the card's dimensions, and size it relative to
+     it's font size. */
+  font-size: inherit;
+  width: 4em;
+  height: 5.5em;
+  /* Add a default background color and border. */
+  background-color: #fff;
+  border-radius: 0.2em;
+  border: 1px solid #c3c3c3;
+  /* Scale and set the background settings. */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  /* "Hide" any text within the element (use text to be
+     simply compliant with screen readers, etc.). */
+  /* Default sizes for cards (size based off the font). */
+  /* Optional styles for cards: borderless and drop shadow. */
+  /* Not a card, but a card-shaped outline to represent a
+     droppable place, like an empty pile. */
+}
+.card.small {
+  font-size: 12px;
+}
+.card.large {
+  font-size: 26px;
+}
+.card.xlarge {
+  font-size: 42px;
+}
+.card.no-border {
+  border: 0;
+}
+.card.shadow {
+  box-shadow: 2px 2px 3px 0 rgba(41, 41, 41, 0.75);
+}
+.card.outline {
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0.02);
+  cursor: default;
+  border: 0.15em dashed rgba(59, 59, 59, 0.2);
+}
+
+.card.ability.ro1 {
+  background-image: url('images/cards/ro/ability/ability-1.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.ability.ro1:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.ability.ro2 {
+  background-image: url('images/cards/ro/ability/ability-2.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.ability.ro2:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.ability.ro3 {
+  background-image: url('images/cards/ro/ability/ability-3.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.ability.ro3:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.ability.ro4 {
+  background-image: url('images/cards/ro/ability/ability-4.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.ability.ro4:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.ability.ro5 {
+  background-image: url('images/cards/ro/ability/ability-5.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.ability.ro5:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.ability.ro6 {
+  background-image: url('images/cards/ro/ability/ability-6.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.ability.ro6:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.ability.ro7 {
+  background-image: url('images/cards/ro/ability/ability-7.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.ability.ro7:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.ability.ro8 {
+  background-image: url('images/cards/ro/ability/ability-8.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.ability.ro8:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.ability.ro9 {
+  background-image: url('images/cards/ro/ability/ability-9.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.ability.ro9:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.ability.ro10 {
+  background-image: url('images/cards/ro/ability/ability-10.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.ability.ro10:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.ability.ro11 {
+  background-image: url('images/cards/ro/ability/ability-11.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.ability.ro11:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.ability.ro12 {
+  background-image: url('images/cards/ro/ability/ability-12.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.ability.ro12:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.ability.ro13 {
+  background-image: url('images/cards/ro/ability/ability-13.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.ability.ro13:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.ability.ro14 {
+  background-image: url('images/cards/ro/ability/ability-14.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.ability.ro14:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.ability.ro15 {
+  background-image: url('images/cards/ro/ability/ability-15.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.ability.ro15:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.ability.ro16 {
+  background-image: url('images/cards/ro/ability/ability-16.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.ability.ro16:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro1 {
+  background-image: url('images/cards/ro/passion/passion-1.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro1:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro2 {
+  background-image: url('images/cards/ro/passion/passion-2.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro2:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro3 {
+  background-image: url('images/cards/ro/passion/passion-3.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro3:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro4 {
+  background-image: url('images/cards/ro/passion/passion-4.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro4:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro5 {
+  background-image: url('images/cards/ro/passion/passion-5.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro5:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro6 {
+  background-image: url('images/cards/ro/passion/passion-6.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro6:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro7 {
+  background-image: url('images/cards/ro/passion/passion-7.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro7:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro8 {
+  background-image: url('images/cards/ro/passion/passion-8.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro8:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro9 {
+  background-image: url('images/cards/ro/passion/passion-9.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro9:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro10 {
+  background-image: url('images/cards/ro/passion/passion-10.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro10:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro11 {
+  background-image: url('images/cards/ro/passion/passion-11.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro11:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro12 {
+  background-image: url('images/cards/ro/passion/passion-12.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro12:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro13 {
+  background-image: url('images/cards/ro/passion/passion-13.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro13:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro14 {
+  background-image: url('images/cards/ro/passion/passion-14.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro14:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro15 {
+  background-image: url('images/cards/ro/passion/passion-15.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro15:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro16 {
+  background-image: url('images/cards/ro/passion/passion-16.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro16:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro17 {
+  background-image: url('images/cards/ro/passion/passion-17.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro17:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro18 {
+  background-image: url('images/cards/ro/passion/passion-18.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro18:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro19 {
+  background-image: url('images/cards/ro/passion/passion-19.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro19:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro20 {
+  background-image: url('images/cards/ro/passion/passion-20.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro20:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro21 {
+  background-image: url('images/cards/ro/passion/passion-21.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro21:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro22 {
+  background-image: url('images/cards/ro/passion/passion-22.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro22:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro23 {
+  background-image: url('images/cards/ro/passion/passion-23.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro23:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro24 {
+  background-image: url('images/cards/ro/passion/passion-24.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro24:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro25 {
+  background-image: url('images/cards/ro/passion/passion-25.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro25:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro26 {
+  background-image: url('images/cards/ro/passion/passion-26.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro26:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro27 {
+  background-image: url('images/cards/ro/passion/passion-27.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro27:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro28 {
+  background-image: url('images/cards/ro/passion/passion-28.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro28:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro29 {
+  background-image: url('images/cards/ro/passion/passion-29.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro29:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro30 {
+  background-image: url('images/cards/ro/passion/passion-30.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro30:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro31 {
+  background-image: url('images/cards/ro/passion/passion-31.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro31:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro32 {
+  background-image: url('images/cards/ro/passion/passion-32.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro32:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro33 {
+  background-image: url('images/cards/ro/passion/passion-33.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro33:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro34 {
+  background-image: url('images/cards/ro/passion/passion-34.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro34:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro35 {
+  background-image: url('images/cards/ro/passion/passion-35.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro35:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.passion.ro36 {
+  background-image: url('images/cards/ro/passion/passion-36.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.passion.ro36:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro1 {
+  background-image: url('images/cards/ro/challenge/challenge-1.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro1:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro2 {
+  background-image: url('images/cards/ro/challenge/challenge-2.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro2:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro3 {
+  background-image: url('images/cards/ro/challenge/challenge-3.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro3:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro4 {
+  background-image: url('images/cards/ro/challenge/challenge-4.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro4:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro5 {
+  background-image: url('images/cards/ro/challenge/challenge-5.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro5:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro6 {
+  background-image: url('images/cards/ro/challenge/challenge-6.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro6:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro7 {
+  background-image: url('images/cards/ro/challenge/challenge-7.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro7:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro8 {
+  background-image: url('images/cards/ro/challenge/challenge-8.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro8:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro9 {
+  background-image: url('images/cards/ro/challenge/challenge-9.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro9:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro10 {
+  background-image: url('images/cards/ro/challenge/challenge-10.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro10:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro11 {
+  background-image: url('images/cards/ro/challenge/challenge-11.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro11:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro12 {
+  background-image: url('images/cards/ro/challenge/challenge-12.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro12:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro13 {
+  background-image: url('images/cards/ro/challenge/challenge-13.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro13:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro14 {
+  background-image: url('images/cards/ro/challenge/challenge-14.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro14:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro15 {
+  background-image: url('images/cards/ro/challenge/challenge-15.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro15:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+.card.challenge.ro16 {
+  background-image: url('images/cards/ro/challenge/challenge-16.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro16:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro17 {
+  background-image: url('images/cards/ro/challenge/challenge-17.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro17:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro18 {
+  background-image: url('images/cards/ro/challenge/challenge-18.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro18:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro19 {
+  background-image: url('images/cards/ro/challenge/challenge-19.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro19:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro20 {
+  background-image: url('images/cards/ro/challenge/challenge-20.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro20:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro21 {
+  background-image: url('images/cards/ro/challenge/challenge-21.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro21:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro22 {
+  background-image: url('images/cards/ro/challenge/challenge-22.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro22:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro23 {
+  background-image: url('images/cards/ro/challenge/challenge-23.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro23:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro24 {
+  background-image: url('images/cards/ro/challenge/challenge-24.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro24:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro25 {
+  background-image: url('images/cards/ro/challenge/challenge-25.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro25:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro26 {
+  background-image: url('images/cards/ro/challenge/challenge-26.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro26:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro27 {
+  background-image: url('images/cards/ro/challenge/challenge-27.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro27:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro28 {
+  background-image: url('images/cards/ro/challenge/challenge-28.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro28:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro29 {
+  background-image: url('images/cards/ro/challenge/challenge-29.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro29:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro30 {
+  background-image: url('images/cards/ro/challenge/challenge-30.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro30:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.challenge.ro31 {
+  background-image: url('images/cards/ro/challenge/challenge-31.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.challenge.ro31:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro1 {
+  background-image: url('images/cards/ro/profession/profession-1.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro1:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro2 {
+  background-image: url('images/cards/ro/profession/profession-2.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro2:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro3 {
+  background-image: url('images/cards/ro/profession/profession-3.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro3:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro4 {
+  background-image: url('images/cards/ro/profession/profession-4.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro4:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro5 {
+  background-image: url('images/cards/ro/profession/profession-5.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro5:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro6 {
+  background-image: url('images/cards/ro/profession/profession-6.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro6:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro7 {
+  background-image: url('images/cards/ro/profession/profession-7.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro7:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro8 {
+  background-image: url('images/cards/ro/profession/profession-8.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro8:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro9 {
+  background-image: url('images/cards/ro/profession/profession-9.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro9:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro10 {
+  background-image: url('images/cards/ro/profession/profession-10.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro10:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro11 {
+  background-image: url('images/cards/ro/profession/profession-11.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro11:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro12 {
+  background-image: url('images/cards/ro/profession/profession-12.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro12:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro13 {
+  background-image: url('images/cards/ro/profession/profession-13.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro13:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro14 {
+  background-image: url('images/cards/ro/profession/profession-14.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro14:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro15 {
+  background-image: url('images/cards/ro/profession/profession-15.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro15:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro16 {
+  background-image: url('images/cards/ro/profession/profession-16.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro16:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro17 {
+  background-image: url('images/cards/ro/profession/profession-17.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro17:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro18 {
+  background-image: url('images/cards/ro/profession/profession-18.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro18:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro19 {
+  background-image: url('images/cards/ro/profession/profession-19.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro19:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro20 {
+  background-image: url('images/cards/ro/profession/profession-20.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro20:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro21 {
+  background-image: url('images/cards/ro/profession/profession-21.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro21:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro22 {
+  background-image: url('images/cards/ro/profession/profession-22.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro22:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro23 {
+  background-image: url('images/cards/ro/profession/profession-23.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro23:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro24 {
+  background-image: url('images/cards/ro/profession/profession-24.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro24:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro25 {
+  background-image: url('images/cards/ro/profession/profession-25.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro25:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro26 {
+  background-image: url('images/cards/ro/profession/profession-26.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro26:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro27 {
+  background-image: url('images/cards/ro/profession/profession-27.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro27:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro28 {
+  background-image: url('images/cards/ro/profession/profession-28.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro28:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro29 {
+  background-image: url('images/cards/ro/profession/profession-29.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro29:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro30 {
+  background-image: url('images/cards/ro/profession/profession-30.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro30:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro31 {
+  background-image: url('images/cards/ro/profession/profession-31.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro31:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro32 {
+  background-image: url('images/cards/ro/profession/profession-32.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro32:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro33 {
+  background-image: url('images/cards/ro/profession/profession-33.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro33:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro34 {
+  background-image: url('images/cards/ro/profession/profession-34.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro34:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro35 {
+  background-image: url('images/cards/ro/profession/profession-35.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro35:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro36 {
+  background-image: url('images/cards/ro/profession/profession-36.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro36:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro37 {
+  background-image: url('images/cards/ro/profession/profession-37.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro37:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro38 {
+  background-image: url('images/cards/ro/profession/profession-38.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro38:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro39 {
+  background-image: url('images/cards/ro/profession/profession-39.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro39:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro40 {
+  background-image: url('images/cards/ro/profession/profession-40.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro40:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro41 {
+  background-image: url('images/cards/ro/profession/profession-41.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro41:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro42 {
+  background-image: url('images/cards/ro/profession/profession-42.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro42:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro43 {
+  background-image: url('images/cards/ro/profession/profession-43.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro43:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro44 {
+  background-image: url('images/cards/ro/profession/profession-44.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro44:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro45 {
+  background-image: url('images/cards/ro/profession/profession-45.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro45:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro46 {
+  background-image: url('images/cards/ro/profession/profession-46.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro46:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro47 {
+  background-image: url('images/cards/ro/profession/profession-47.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro47:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro48 {
+  background-image: url('images/cards/ro/profession/profession-48.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro48:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro49 {
+  background-image: url('images/cards/ro/profession/profession-49.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro49:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro50 {
+  background-image: url('images/cards/ro/profession/profession-50.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro50:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro51 {
+  background-image: url('images/cards/ro/profession/profession-51.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro51:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro52 {
+  background-image: url('images/cards/ro/profession/profession-52.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro52:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro53 {
+  background-image: url('images/cards/ro/profession/profession-53.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro53:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro54 {
+  background-image: url('images/cards/ro/profession/profession-54.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro54:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro55 {
+  background-image: url('images/cards/ro/profession/profession-55.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro55:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro56 {
+  background-image: url('images/cards/ro/profession/profession-56.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro56:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro57 {
+  background-image: url('images/cards/ro/profession/profession-57.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro57:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro58 {
+  background-image: url('images/cards/ro/profession/profession-58.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro58:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro59 {
+  background-image: url('images/cards/ro/profession/profession-59.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro59:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro60 {
+  background-image: url('images/cards/ro/profession/profession-60.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro60:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro61 {
+  background-image: url('images/cards/ro/profession/profession-61.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro61:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro62 {
+  background-image: url('images/cards/ro/profession/profession-62.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro62:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro63 {
+  background-image: url('images/cards/ro/profession/profession-63.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro63:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.profession.ro64 {
+  background-image: url('images/cards/ro/profession/profession-64.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.profession.ro64:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  float: bottom;
+}
+
+.card.backs.ro.ability {
+  background-image: url('images/backs/ro/ability.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.backs.ro.profession {
+  background-image: url('images/backs/ro/profession.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.backs.ro.passion {
+  background-image: url('images/backs/ro/passion.svg');
+  transition: transform 0.5s ease-out;
+}
+
+.card.backs.ro.challenge {
+  background-image: url('images/backs/ro/challenge.svg');
+  transition: transform 0.5s ease-out;
+}
+
+/* Re-orients the cards for different directions. While
+   they are symmetric, it's still important to orient
+   them correctly in case text or other symbols are
+   layered on them with CSS pseudo-selectors, new
+   classes/rules, etc. */
+.card.west,
+.card.W {
+  transform: rotate(90deg);
+  margin: auto 0.75em;
+}
+.card.west.shadow,
+.card.W.shadow {
+  box-shadow: 2px -2px 3px 0 rgba(41, 41, 41, 0.75);
+}
+
+.card.north,
+.card.N {
+  transform: rotate(180deg);
+}
+.card.north.shadow,
+.card.N.shadow {
+  box-shadow: -2px -2px 3px 0 rgba(41, 41, 41, 0.75);
+}
+
+.card.east,
+.card.E {
+  transform: rotate(270deg);
+  margin: auto 0.75em;
+}
+.card.east.shadow,
+.card.E.shadow {
+  box-shadow: -2px 2px 3px 0 rgba(41, 41, 41, 0.75);
+}
