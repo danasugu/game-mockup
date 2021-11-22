@@ -245,9 +245,9 @@ source.onmessage = function (event) {
 };
 
 source.onerror = function (event) {
-  // alert(
-  //   'Error connecting to the server, please use Synchronize when connection is restored'
-  // );
+  //   alert(
+  //     'Error connecting to the server, please use Synchronize when connection is restored'
+  //   );
 };
 
 function getBaseURL() {
@@ -331,7 +331,7 @@ function dealCards() {
 }
 
 function render() {
-  clearAllDivs();
+  //   clearAllDivs();
   renderPiles();
 }
 
@@ -345,9 +345,10 @@ function renderPiles() {
 function renderPile(pile) {
   pile.forEach((card, cIdx) => {
     let cardEl = document.createElement('div');
+    cardEl.id = `card.${lang}.${card.suit}.${card.value}`;
     cardEl.className = `card backs ${lang} ${card.suit}`;
-    cardEl.style = `position: absolute; left: -7px; top: ${
-      -7 + cIdx * -0.5
+    cardEl.style = `position:absolute; left: 191px; top: ${
+      31 + cIdx * -0.5
     }px;`;
     switch (pile) {
       case pile_ability:
@@ -407,11 +408,11 @@ function getCardObjFromClass(cardClass) {
 }
 
 function handleClick(evt) {
-  // alert('Click not handled yet for master');
+  //   alert('Click not handled yet for master');
 }
 
 function handlePileClick(pile) {
-  // alert('click not handled yet');
+  //   alert('click not handled yet');
   /*
     if (!clickedCard && isPlayerTurn() && ! hasDrawn) {
         hasDrawn = drawCard(pile);
