@@ -14,13 +14,13 @@ body {
   /* flex-grow: 1; */
   gap: 25px;
 }
+
 .centered {
   text-align: center;
 }
+
 .left-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 120px;
   border: 1px solid goldenrod;
 }
 .left-users-title {
@@ -29,20 +29,28 @@ body {
   /* text-align: center; */
   font-size: 1.5rem;
   text-transform: uppercase;
-  padding-bottom: 69px;
-  align-self: flex-start;
+  // align-self: flex-start;
 }
 .far {
   color: green;
   font-size: 19px;
 }
+
 .user-left {
   text-align: left;
+  margin: 5px 5px 5px 5px;
 }
+
+.command-container {
+  display: grid;
+  grid-template-columns: 600px;
+  grid-template-rows: repeat(6, 1fr);
+}
+
 .right-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 90px;
+  gap: 10px;
   margin-left: 15px;
   /* justify-content: center;
   align-content: center;
@@ -53,14 +61,10 @@ body {
   background-color: rgb(202, 202, 202);
   /* justify-content: space-between; */
 }
-
-.right-container > * {
-  display: flex;
-}
 .right-users-title {
-  font-weight: 500;
+  //font-weight: 500;
   color: rebeccapurple;
-  font-size: 20px;
+  //font-size: 20px;
   padding: 0px;
   margin: 0;
 }
@@ -88,41 +92,44 @@ body {
   justify-self: stretch;
   margin: auto;
 }
+
 .right-user * {
   width: 100%;
   flex: 1;
   margin: auto;
   flex-grow: 6;
 }
+
 .users-right-container {
   /* flex-basis: 100%; */
   display: flex;
   background-color: greenyellow;
 }
-.user-1 {
+.user {
   display: flex;
   justify-content: stretch;
   width: 100%;
 }
+
 .po {
-  width: 250px;
-  height: 230px;
+  width: 180px;
+  height: 280px;
   border: 1px solid goldenrod;
   background-color: #a1f3a1;
   font-size: 21px;
   /* background-color: violet; */
 }
 .dr {
-  width: 250px;
-  height: 230px;
+  width: 180px;
+  height: 280px;
   border: 1px solid goldenrod;
   background-color: #a1f3a1;
   font-size: 21px;
   /* background-color: violet; */
 }
 .ch {
-  width: 250px;
-  height: 230px;
+  width: 180px;
+  height: 280px;
   border: 1px solid goldenrod;
   background-color: #a1f3a1;
   font-size: 21px;
@@ -132,21 +139,14 @@ body {
 .ret {
   flex: 3;
   background-color: #abddab;
-  height: 200px;
+  height: 65px;
   text-transform: uppercase;
   /* padding: 10px; */
 }
 
 .grid-container {
-  flex-flow: row wrap;
-
-  /* Then we define how is distributed the remaining space */
-  justify-content: flex-start;
-  align-items: baseline;
-  /* display: flex; */
-  /* grid-auto-columns: auto auto auto auto;
-  grid-auto-flow: column dense; */
-  /* margin: auto; */
+  display: flex;
+  padding-top: 12em;
 }
 
 .dock {
@@ -155,19 +155,32 @@ body {
 
 .action {
   display: flex;
-  /* position:relative; */
   align-items: center;
   justify-content: end;
 }
 
-.select {
-  width: 150px;
-  height: 36px;
-}
 .btn {
-  padding: 10px 30px;
+  padding: 5px 5px;
+  size: 30px;
+  margin: 5px;
 }
+
 .btn-action {
-  padding: 10px 30px;
   background-color: #a1f3a1;
+}
+
+.messages {
+  overflow: auto;
+  display: flex;
+}
+
+.timer {
+  background-color: #a1f3a1;
+  font-size: 20px;
+}
+
+.header {
+  padding: 2px;
+  text-align: center;
+  font-size: 15px;
 }
