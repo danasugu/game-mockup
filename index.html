@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,9 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Master Board</title>
+    <link rel="stylesheet" href="master.css">
     <link rel="stylesheet" href="cards.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="stylesheet" href="master.css">
 </head>
 
 
@@ -17,16 +18,15 @@
 
     <!-- left -->
     <div class="left-container">
-        <div class="centered left-users-title"> Users</div>
+        <!--div class="left-users-title">Users</div-->
 
         <div class="left-users">
-            <div class="user-left"><i class="far fa-grin-beam"> User 1</i> </div>
-            <div class="user-left"><i class="far fa-grin-beam"> User 2</i> </div>
-            <div class="user-left"><i class="far fa-grin-beam"> User 3</i> </div>
-            <div class="user-left"><i class="far fa-grin-beam"> User 4</i> </div>
-            <div class="user-left"><i class="far fa-grin-beam"> User 5</i> </div>
-            <div class="user-left"><i class="far fa-grin-beam"> User 6</i> </div>
-
+            <div class="user-left"><i class="far fa-grin-beam" id="user_1" draggable="true"> User 1</i> </div>
+            <div class="user-left"><i class="far fa-grin-beam" id="user_2" draggable="true"> User 2</i> </div>
+            <div class="user-left"><i class="far fa-grin-beam" id="user_3" draggable="true"> User 3</i> </div>
+            <div class="user-left"><i class="far fa-grin-beam" id="user_4" draggable="true"> User 4</i> </div>
+            <div class="user-left"><i class="far fa-grin-beam" id="user_5" draggable="true"> User 5</i> </div>
+            <div class="user-left"><i class="far fa-grin-beam" id="user_6" draggable="true"> User 6</i> </div>
         </div>
     </div>
 
@@ -39,53 +39,72 @@
             <div id="pile_passion" class="card outline"></div>
             <div id="pile_challenge" class="card outline"></div>
         </div>
-        <div class="butoane">
-            <button class="btn btn-action">buton1</button>
-            <button class="btn btn-action">buton2</button>
-            <button class="btn btn-action">buton3</button>
-            <button class="btn btn-action">buton4</button>
-            <button class="btn btn-action">buton5</button>
+        <div class="command-container">
+            <div>
+                Game:<br>
+                <input id="game_id" type="text" size="30" name="game_id"/><button class="btn btn-action" id="btn_send_game">Open</button>
+            </div>
+            <div>
+                Table:<br>
+                <input id="table_id" type="text" size="30" name="table_id" /><button class="btn btn-action" id="btn_table_invite">Invite</button>
+            </div>
+            <div>
+                <button class="btn btn-action" id="btn_start_game">Start Game</button>
+                <button class="btn btn-action" id="btn_freeze_round">Freeze Round</button>
+            </div>
+            <div>
+                <input type="text" size="30"/>
+            </div>
         </div>
-        <textarea id="messages" name="messages" rows="10" cols="40"></textarea>
+        <div>
+            <div id="timer" class="timer">TIME - 0:00</div>
+            <div>
+            Messages:<br>
+            <textarea id="messages" class="messages" name="messages" rows="10" cols="50"></textarea>
+            </div>
+            <div>
+                Heartbeat:
+            </div>
+        </div>
         <div class="r1">
             <div class="u">
-                <div class="centered right-users-title"> User 1
+                <div class="centered right-users-title"> <h5 id="player_1" class="header">Player 1</h5>
                     <div class="right-user">
                         <div class="users-right">
-                            <div class="user-1">
-                                <div class="po">Po</div>
-                                <div class="dr">Dr</div>
-                                <div class="ch">Ch</div>
+                            <div class="user">
+                                <div class="po" id="portfolio_player_1">Po</div>
+                                <div class="dr" id="draw_player_1">Dr</div>
+                                <div class="ch" id="challenge_player_1">Ch</div>
                             </div>
-                            <div class="ret">Ret</div>
+                            <div class="ret" id="ret_player_1">Ret</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="u">
-                <div class="centered right-users-title"> User 2
+                <div class="centered right-users-title"> <h5 id="player_2" class="header">Player 2</h5>
                     <div class="right-user">
                         <div class="users-right">
-                            <div class="user-1">
-                                <div class="po">Po</div>
-                                <div class="dr">Dr</div>
-                                <div class="ch">Ch</div>
+                            <div class="user">
+                                <div class="po" id="portfolio_player_2">Po</div>
+                                <div class="dr" id="draw_player_2">Dr</div>
+                                <div class="ch" id="challenge_player_2">Ch</div>
                             </div>
-                            <div class="ret">ret</div>
+                            <div class="ret" id="ret_player_2">ret</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="u">
-                <div class="centered right-users-title"> User 3
+                <div class="centered right-users-title"> <h5 id="player_3" class="header">Player 3</h5>
                     <div class="right-user">
                         <div class="users-right">
-                            <div class="user-1">
-                                <div class="po"> Po</div>
-                                <div class="dr">Dr</div>
-                                <div class="ch">Ch</div>
+                            <div class="user">
+                                <div class="po" id="portfolio_player_3"> Po</div>
+                                <div class="dr" id="draw_player_3">Dr</div>
+                                <div class="ch" id="challenge_player_3">Ch</div>
                             </div>
-                            <div class="ret">ret</div>
+                            <div class="ret" id="ret_player_3">ret</div>
                         </div>
                     </div>
                 </div>
@@ -94,43 +113,43 @@
         <div class="break"></div>
         <div class="r2">
             <div class="u">
-                <div class="centered right-users-title"> User 4
+                <div class="centered right-users-title"> <h5 id="player_4" class="header">Player 4</h5>
                     <div class="right-user">
                         <div class="users-right">
-                            <div class="user-1">
-                                <div class="po">Po</div>
-                                <div class="dr">Dr</div>
-                                <div class="ch">Ch</div>
+                            <div class="user">
+                                <div class="po" id="portfolio_player_4">Po</div>
+                                <div class="dr" id="draw_player_4">Dr</div>
+                                <div class="ch" id="challenge_player_4">Ch</div>
                             </div>
-                            <div class="ret">ret</div>
+                            <div class="ret" id="ret_player_4">ret</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="u">
-                <div class="centered right-users-title"> User 5
+                <div class="centered right-users-title"> <h5 id="player_5" class="header">Player 5</h5>
                     <div class="right-user">
                         <div class="users-right">
-                            <div class="user-1">
-                                <div class="po">Po</div>
-                                <div class="dr">Dr</div>
-                                <div class="ch">Ch</div>
+                            <div class="user">
+                                <div class="po" id="portfolio_player_5">Po</div>
+                                <div class="dr" id="draw_player_5">Dr</div>
+                                <div class="ch" id="challenge_player_5">Ch</div>
                             </div>
-                            <div class="ret">ret</div>
+                            <div class="ret" id="ret_player_5">ret</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="u">
-                <div class="centered right-users-title"> User 6
+                <div class="centered right-users-title"> <h5 id="player_6" class="header">Player 6</h5>
                     <div class="right-user">
                         <div class="users-right">
-                            <div class="user-1">
-                                <div class="po">Po</div>
-                                <div class="dr">Dr</div>
-                                <div class="ch">Ch</div>
+                            <div class="user">
+                                <div class="po" id="portfolio_player_6">Po</div>
+                                <div class="dr" id="draw_player_6">Dr</div>
+                                <div class="ch" id="challenge_player_6">Ch</div>
                             </div>
-                            <div class="ret">ret</div>
+                            <div class="ret" id="ret_player_6">ret</div>
                         </div>
                     </div>
                 </div>
@@ -138,18 +157,6 @@
         </div>
     </div>
 </div>
-
-<div class="action">
-
-    <select class="select" name="" id="">Action
-        <option value="">Action 1</option>
-        <option value="">Action 2</option>
-        <option value="">Action 3</option>
-        <option value="">Action 4</option>
-    </select>
-    <button class="btn btn-action">Go</button>
-</div>
-
 
 </div>
 
