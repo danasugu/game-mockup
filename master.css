@@ -1,168 +1,201 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background-color: gainsboro;
+}
 
-<!DOCTYPE html>
-<html lang="en">
+.container {
+  display: flex;
+  justify-content: space-between;
+  /* flex-grow: 1; */
+  gap: 15px;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Master Board</title>
-    <link rel="stylesheet" href="master.css">
-    <link rel="stylesheet" href="cards.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-</head>
+.centered {
+  text-align: center;
+}
 
-<div class="container">
+.left-container {
+  width: 180px;
+  border: 1px solid goldenrod;
+}
 
-    <!-- left -->
-    <div class="left-container">
-        <div id="users-tree" class="users-tree"></div>
-    </div>
+.left-users-title {
+  width: 15%;
+  height: 120px;
+  /* text-align: center; */
+  font-size: 1.5rem;
+  text-transform: uppercase;
+ // align-self: flex-start;
+}
+.far {
+  color: green;
+  font-size: 19px;
+}
 
-    <!-- right -->
-    <div class="right-container">
-        <div class="grid-container">
-            <div id="pile_ability" class="card outline"></div>
-            <div id="pile_profession" class="card outline"></div>
-            <div id="pile_passion" class="card outline"></div>
-            <div id="pile_challenge" class="card outline"></div>
-        </div>
-        <div class="command-container">
-            <div>
-                Game:<br>
-                <input id="game_id" type="text" size="30" name="game_id"/><button class="btn btn-action" id="btn_send_game">Open</button>
-            </div>
-            <div>
-                Table:<br>
-                <input id="table_id" type="text" size="30" name="table_id" />
-                <button class="btn btn-action" id="btn_table_invite" onclick="sendTableInvite()">Invite</button>
-            </div>
-            <div>
-                <button class="btn btn-action" id="btn_start_game">Start Game</button>
-                <button class="btn btn-action" id="btn_start_round">Start Round</button>
-                <button class="btn btn-action" id="btn_freeze_round">Freeze Round</button>
-            </div>
-            <div>
-                <select name="DrawingPile" id="drawing_pile" >
-                    <option value="ability" selected>Ability</option>
-                    <option value="profession">Profession</option>
-                    <option value="passion">Passion</option>
-                    <option value="challenge">Challenge</option>
-                </select>
-                <input type="number" min="1" max="4" step="1" value="1" required>
-                <button class="btn btn-action" id="btn_offer_cards">Offer Cards</button>
-            </div>
-        </div>
-        <div>
-            <div id="timer" class="timer">TIME - 0:00</div>
-            <div>
-            Messages:<br>
-            <textarea id="messages" class="messages" name="messages" rows="20" cols="50"></textarea>
-            </div>
-            <div>
-                Heartbeat: <input type="time" id="heartbeat" maxlength="10" readonly="true" class="heartbeat-on">
-            </div>
-        </div>
-        <div class="r1">
-            <div class="u">
-                <div class="centered right-users-title"> <h5 id="player_1" class="header">Player 1</h5>
-                    <div class="right-user">
-                        <div class="users-right">
-                            <div class="user">
-                                <div class="po" id="portfolio_player_1">Po</div>
-                                <div class="dr" id="draw_player_1">Dr</div>
-                                <div class="ch" id="challenge_player_1">Ch</div>
-                            </div>
-                            <div class="ret" id="ret_player_1">Ret</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="u">
-                <div class="centered right-users-title"> <h5 id="player_2" class="header">Player 2</h5>
-                    <div class="right-user">
-                        <div class="users-right">
-                            <div class="user">
-                                <div class="po" id="portfolio_player_2">Po</div>
-                                <div class="dr" id="draw_player_2">Dr</div>
-                                <div class="ch" id="challenge_player_2">Ch</div>
-                            </div>
-                            <div class="ret" id="ret_player_2">ret</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="u">
-                <div class="centered right-users-title"> <h5 id="player_3" class="header">Player 3</h5>
-                    <div class="right-user">
-                        <div class="users-right">
-                            <div class="user">
-                                <div class="po" id="portfolio_player_3"> Po</div>
-                                <div class="dr" id="draw_player_3">Dr</div>
-                                <div class="ch" id="challenge_player_3">Ch</div>
-                            </div>
-                            <div class="ret" id="ret_player_3">ret</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="break"></div>
-        <div class="r2">
-            <div class="u">
-                <div class="centered right-users-title"> <h5 id="player_4" class="header">Player 4</h5>
-                    <div class="right-user">
-                        <div class="users-right">
-                            <div class="user">
-                                <div class="po" id="portfolio_player_4">Po</div>
-                                <div class="dr" id="draw_player_4">Dr</div>
-                                <div class="ch" id="challenge_player_4">Ch</div>
-                            </div>
-                            <div class="ret" id="ret_player_4">ret</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="u">
-                <div class="centered right-users-title"> <h5 id="player_5" class="header">Player 5</h5>
-                    <div class="right-user">
-                        <div class="users-right">
-                            <div class="user">
-                                <div class="po" id="portfolio_player_5">Po</div>
-                                <div class="dr" id="draw_player_5">Dr</div>
-                                <div class="ch" id="challenge_player_5">Ch</div>
-                            </div>
-                            <div class="ret" id="ret_player_5">ret</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="u">
-                <div class="centered right-users-title"> <h5 id="player_6" class="header">Player 6</h5>
-                    <div class="right-user">
-                        <div class="users-right">
-                            <div class="user">
-                                <div class="po" id="portfolio_player_6">Po</div>
-                                <div class="dr" id="draw_player_6">Dr</div>
-                                <div class="ch" id="challenge_player_6">Ch</div>
-                            </div>
-                            <div class="ret" id="ret_player_6">ret</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+.user-left {
+  text-align: left;
+  margin: 5px 5px 5px 5px;
+}
 
-</div>
+.command-container {
+  display: grid;
+  grid-template-columns: 600px;
+  grid-template-rows: repeat(6, 1fr);
+}
 
-<!--<script src="tree.js"></script>-->
-<script src="DraggableTree.js"></script>
-<script src="master.js"></script>
+.right-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: 15px;
+  /* justify-content: center;
+  align-content: center;
+  align-content: stretch;
+  align-items: stretch; */
+  border: 1px solid goldenrod;
+  width: 100%;
+  background-color: rgb(202, 202, 202);
+  /* justify-content: space-between; */
+}
+.right-users-title {
+  //font-weight: 500;
+  color: rebeccapurple;
+  //font-size: 20px;
+  padding: 0px;
+  margin: 0;
+}
+.r1 {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: calc(100% / 3);
+}
+.r2 {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: calc(100% / 3);
+}
+.break {
+  flex-basis: 100%;
+  flex-wrap: wrap;
+}
+.right-user {
+  display: flex;
+}
+.u {
+  border: 1px solid goldenrod;
+  display: flex;
+  align-self: stretch;
+  justify-self: stretch;
+  margin: auto;
+}
 
+.right-user * {
+  width: 100%;
+  flex: 1;
+  margin: auto;
+  flex-grow: 6;
+}
 
-</body>
+.users-right-container {
+  /* flex-basis: 100%; */
+  display: flex;
+  background-color: greenyellow;
+}
+.user {
+  display: flex;
+  justify-content: stretch;
+  width: 100%;
+}
 
-</html>
+.po {
+  width: 180px;
+  height: 280px;
+  border: 1px solid goldenrod;
+  background-color: #a1f3a1;
+  font-size: 21px;
+  /* background-color: violet; */
+}
+.dr {
+  width: 180px;
+  height: 280px;
+  border: 1px solid goldenrod;
+  background-color: #a1f3a1;
+  font-size: 21px;
+  /* background-color: violet; */
+}
+.ch {
+  width: 180px;
+  height: 280px;
+  border: 1px solid goldenrod;
+  background-color: #a1f3a1;
+  font-size: 21px;
+  /* background-color: violet; */
+}
+
+.ret {
+  flex: 3;
+  background-color: #abddab;
+  height: 65px;
+  text-transform: uppercase;
+  /* padding: 10px; */
+}
+
+.grid-container {
+  display: flex;
+  padding-top: 12em;
+}
+
+.dock {
+  height: 200px;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.btn {
+  padding: 5px 5px;
+  size: 30px;
+  margin: 5px;
+}
+
+.btn-action {
+  background-color: #a1f3a1;
+}
+
+.messages {
+  overflow: auto;
+  display: flex;
+}
+
+.timer {
+  background-color: #a1f3a1;
+  font-size: 20px;
+}
+
+.heartbeat-on {
+  background-color: #a1f3a1;
+}
+
+.heartbeat-off {
+  background-color: #ff6347;
+}
+
+.header {
+  padding: 2px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.layers {
+  width: 100% !important;
+  /*min-height: 500px;*/
+}
