@@ -13,23 +13,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 
-
 <div class="container">
 
     <!-- left -->
     <div class="left-container">
-        <!--div class="left-users-title">Users</div-->
-
-        <div class="left-users">
-            <div class="user-left"><i class="far fa-grin-beam" id="user_1" draggable="true"> User 1</i> </div>
-            <div class="user-left"><i class="far fa-grin-beam" id="user_2" draggable="true"> User 2</i> </div>
-            <div class="user-left"><i class="far fa-grin-beam" id="user_3" draggable="true"> User 3</i> </div>
-            <div class="user-left"><i class="far fa-grin-beam" id="user_4" draggable="true"> User 4</i> </div>
-            <div class="user-left"><i class="far fa-grin-beam" id="user_5" draggable="true"> User 5</i> </div>
-            <div class="user-left"><i class="far fa-grin-beam" id="user_6" draggable="true"> User 6</i> </div>
-        </div>
+        <div id="users-tree" class="users-tree"></div>
     </div>
-
 
     <!-- right -->
     <div class="right-container">
@@ -46,24 +35,33 @@
             </div>
             <div>
                 Table:<br>
-                <input id="table_id" type="text" size="30" name="table_id" /><button class="btn btn-action" id="btn_table_invite">Invite</button>
+                <input id="table_id" type="text" size="30" name="table_id" />
+                <button class="btn btn-action" id="btn_table_invite" onclick="sendTableInvite()">Invite</button>
             </div>
             <div>
                 <button class="btn btn-action" id="btn_start_game">Start Game</button>
+                <button class="btn btn-action" id="btn_start_round">Start Round</button>
                 <button class="btn btn-action" id="btn_freeze_round">Freeze Round</button>
             </div>
             <div>
-                <input type="text" size="30"/>
+                <select name="DrawingPile" id="drawing_pile" >
+                    <option value="ability" selected>Ability</option>
+                    <option value="profession">Profession</option>
+                    <option value="passion">Passion</option>
+                    <option value="challenge">Challenge</option>
+                </select>
+                <input type="number" min="1" max="4" step="1" value="1" required>
+                <button class="btn btn-action" id="btn_offer_cards">Offer Cards</button>
             </div>
         </div>
         <div>
             <div id="timer" class="timer">TIME - 0:00</div>
             <div>
             Messages:<br>
-            <textarea id="messages" class="messages" name="messages" rows="10" cols="50"></textarea>
+            <textarea id="messages" class="messages" name="messages" rows="20" cols="50"></textarea>
             </div>
             <div>
-                Heartbeat:
+                Heartbeat: <input type="time" id="heartbeat" maxlength="10" readonly="true" class="heartbeat-on">
             </div>
         </div>
         <div class="r1">
@@ -160,7 +158,10 @@
 
 </div>
 
+<!--<script src="tree.js"></script>-->
+<script src="DraggableTree.js"></script>
 <script src="master.js"></script>
+
 
 </body>
 
